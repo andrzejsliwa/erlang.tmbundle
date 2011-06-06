@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+require ENV['TM_BUNDLE_SUPPORT'] + '/environment.rb'
+dispatch :controller =&gt; "rebar", :action =&gt; "compile"
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^R</string>
+	<key>name</key>
+	<string>Rebar - compile</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>source.erlang</string>
+	<key>uuid</key>
+	<string>B8CF3426-DC7E-4A60-A15B-1C4B08E59FF4</string>
+</dict>
+</plist>

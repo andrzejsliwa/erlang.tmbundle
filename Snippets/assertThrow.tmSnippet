@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>?assertThrow(${1:{not_found, _\}}, ?MODNAME:${2:func}(${3:unknown_object})),
+</string>
+	<key>name</key>
+	<string>assertThrow</string>
+	<key>scope</key>
+	<string>source.erlang</string>
+	<key>tabTrigger</key>
+	<string>ast</string>
+	<key>uuid</key>
+	<string>8CA1FC81-360A-450C-A98D-52F282FD88DD</string>
+</dict>
+</plist>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>%%%'   HEADER
+%%
+%% @author    ${TM_AUTHOR} &lt;${TM_AUTHOR_EMAIL}&gt;
+%% @copyright ${TM_YEAR} ${TM_AUTHOR}
+%% @doc       ${1:description} ${2:name}.
+%% @end
+%% -module(${3:${TM_FILEPATH/^.*\/(.*)\.erl$/$1/g}}).
+-export([main/1]).
+-define(CMD, filename:basename(escript:script_name())).
+
+%%%.
+%%%'   PUBLIC API
+-spec main(Args :: [string()]) -&gt; ok.
+main(_)-&gt;
+    usage().
+
+%%%.
+%%%'   PRIVATE FUNCTIONS
+%% @private
+-spec usage() -&gt; ok.
+usage() -&gt;
+    io:format("Usage: ~s ...~n", [?CMD]),
+    halt(1).
+</string>
+	<key>name</key>
+	<string>Escript</string>
+	<key>scope</key>
+	<string>source.erlang</string>
+	<key>tabTrigger</key>
+	<string>escript</string>
+	<key>uuid</key>
+	<string>52F35D76-CA0D-4A83-9000-660EC5B69B53</string>
+</dict>
+</plist>

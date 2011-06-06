@@ -1,0 +1,10 @@
+<pre>
+  <%= @output %>
+</pre>
+<ul>
+<% @results.each do |link| %>
+  <li class="<%= link[:class] %>">
+    <a href="<%= link[:url] %>"><%= link[:line] %></a>
+  </li>
+<% end if @results %>
+</ul>

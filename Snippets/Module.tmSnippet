@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>%%%'   HEADER
+%%
+%% @author    ${TM_AUTHOR} &lt;${TM_AUTHOR_EMAIL}&gt;
+%% @copyright ${TM_YEAR} ${TM_AUTHOR}
+%% @doc       ${1:description} ${2:${TM_FILEPATH/^.*\/(.*)\.erl$/$1/g}}.
+%% @end
+-module(${2:${TM_FILEPATH/^.*\/(.*)\.erl$/$1/g}}).
+-export([]).
+
+%%%.
+%%%'   PUBLIC API
+${3:...}
+
+%%%.
+%%%'   PRIVATE FUNCTIONS
+%% @private
+...
+
+
+</string>
+	<key>name</key>
+	<string>Module</string>
+	<key>scope</key>
+	<string>source.erlang</string>
+	<key>tabTrigger</key>
+	<string>module</string>
+	<key>uuid</key>
+	<string>4D523B67-0A8F-43C0-BB25-0F144CF8B476</string>
+</dict>
+</plist>

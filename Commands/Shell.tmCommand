@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+require ENV['TM_BUNDLE_SUPPORT'] + '/terminal.rb'
+
+run(:in_visor =&gt; true)</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>~@s</string>
+	<key>name</key>
+	<string>Shell</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>source.erlang</string>
+	<key>uuid</key>
+	<string>7CD00296-993E-4C5A-AE68-48753F8439EE</string>
+</dict>
+</plist>

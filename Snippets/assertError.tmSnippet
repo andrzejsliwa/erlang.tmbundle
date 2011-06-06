@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>?assertError(${1:badarith}, ?MODNAME:${2:divide}(${3:X, 0})),
+</string>
+	<key>name</key>
+	<string>assertError</string>
+	<key>scope</key>
+	<string>source.erlang</string>
+	<key>tabTrigger</key>
+	<string>aser</string>
+	<key>uuid</key>
+	<string>5019A32D-6824-4679-921B-70372D8F6DC2</string>
+</dict>
+</plist>

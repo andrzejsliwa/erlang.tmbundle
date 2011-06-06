@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>%%%'   HEADER
+%%
+%% @author    ${TM_AUTHOR} &lt;${TM_AUTHOR_EMAIL}&gt;
+%% @copyright ${TM_YEAR} ${TM_AUTHOR}
+%% @doc       EUnit test suite module ${1:name}.
+%% @end
+-module(${1:${TM_FILEPATH/^.*\/(.*)\.erl$/$1/g}}).
+-author('${TM_AUTHOR} &lt;${TM_AUTHOR_EMAIL}&gt;').
+
+-define(NOTEST, true).
+-define(NOASSERT, true).
+-include_lib("eunit/include/eunit.hrl").
+
+-define(MODNAME, ${1:name}).
+%%%.
+%%%' TEST GENERATOR
+-spec ${1:name}_test_() -&gt; [term()].
+${1:name}_test_() -&gt;
+    %% add your asserts in the returned list, e.g.:
+    %% [
+    %%   ?assert(?MODNAME:double(2) =:= 4),
+    %%   ?assertMatch({ok, Pid}, ?MODNAME:spawn_link()),
+    %%   ?assertEqual("ba", ?MODNAME:reverse("ab")),
+    %%   ?assertError(badarith, ?MODNAME:divide(X, 0)),
+    %%   ?assertExit(normal, ?MODNAME:exit(normal)),
+    %%   ?assertThrow({not_found, _}, ?MODNAME:func(unknown_object))
+    %% ]
+    [].
+</string>
+	<key>name</key>
+	<string>Eunit Module</string>
+	<key>scope</key>
+	<string>source.erlang</string>
+	<key>tabTrigger</key>
+	<string>eunit</string>
+	<key>uuid</key>
+	<string>517AF1F5-64E3-4B4C-AD50-DA1883F52351</string>
+</dict>
+</plist>

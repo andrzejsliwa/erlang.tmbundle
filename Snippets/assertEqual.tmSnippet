@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>?assertEqual(${1:"ba"}, ?MODNAME:${2:reverse}(${3:"ab"})),
+</string>
+	<key>name</key>
+	<string>assertEqual</string>
+	<key>scope</key>
+	<string>source.erlang</string>
+	<key>tabTrigger</key>
+	<string>ase</string>
+	<key>uuid</key>
+	<string>B0ABFEE1-DB7E-4FF5-BCCF-B3CAAC000BC5</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>%%%.
+%%%'   PUBLIC API
+</string>
+	<key>name</key>
+	<string>%%% Public</string>
+	<key>scope</key>
+	<string>source.erlang</string>
+	<key>tabTrigger</key>
+	<string>%p</string>
+	<key>uuid</key>
+	<string>403D0140-3D67-4C2F-ABB5-BA205D5AA7C3</string>
+</dict>
+</plist>
