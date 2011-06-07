@@ -18,7 +18,7 @@ run(:in_visor =&gt; true, :compile =&gt; true)
 	<key>name</key>
 	<string>Compile</string>
 	<key>output</key>
-	<string>showAsHTML</string>
+	<string>discard</string>
 	<key>scope</key>
 	<string>source.erlang</string>
 	<key>uuid</key>
