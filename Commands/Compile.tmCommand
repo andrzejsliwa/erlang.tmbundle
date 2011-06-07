@@ -8,7 +8,7 @@
 	<string>#!/usr/bin/env ruby
 
 require ENV['TM_BUNDLE_SUPPORT'] + '/terminal.rb'
-run(:in_visor =&gt; true, :compile =&gt; true)
+run(:in_visor =&gt; true, :compile =&gt; true, :node =&gt; ENV["ERLANG_NODE"])
 
 </string>
 	<key>input</key>

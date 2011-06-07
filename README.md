@@ -21,11 +21,20 @@ To install without Git:
 Required:
 
     Ruby 1.8.7 or greater
-    sudo gem install rb-appscript
+    gem install rb-appscript (and define right PATH to ruby in "TextMate -> Preferences -> Advanced -> Shell Variables")
     Visor (for integration with terminal)
-    
-    
+
+Options ( TextMate -> Preferences -> Advanced -> Shell Variables ):
+
+    Define erlang node for shell:
+
+    Variable     |  Value
+    -----------------------------------
+    ERLANG_NODE  |  -name mac@127.0.0.1
+
+    If ERLANG_NODE not defined then is used default '-name mate@127.0.0.1'
+
 Feedback welcome.
 
-Andrzej Sliwa  
+Andrzej Sliwa
 June 6, 2011.
