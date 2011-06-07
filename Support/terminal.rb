@@ -3,7 +3,7 @@ begin
   require 'appscript'
   include Appscript
 rescue LoadError
-  raise 'You must "sudo gem install rb-appscript"'
+  raise 'You must "gem install rb-appscript"'
 end
 
 def run(options)
@@ -40,4 +40,6 @@ def run(options)
     compile_cmd = "c(\"#{source_file}\",[{outdir, \"#{compile_path}\"}])."
     app('Terminal').do_script(compile_cmd, :in => tab)
   end
+
+  current_window.selected_tab.set(tab)
 end
