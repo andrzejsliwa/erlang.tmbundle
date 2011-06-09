@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+require "#{ENV['TM_SUPPORT_PATH']}/lib/scriptmate.rb"
+require "#{ENV['TM_SUPPORT_PATH']}/lib/progress.rb"
+require "#{ENV['TM_SUPPORT_PATH']}/lib/exit_codes.rb"
+require "#{ENV['TM_SUPPORT_PATH']}/lib/ui.rb"
+
+line_number = ENV['TM_LINE_NUMBER'].to_i - 1
+line_index = ENV['TM_LINE_INDEX'].to_i
+support = ENV['TM_BUNDLE_SUPPORT']
+module_name = ENV['TM_FILEPATH'].split('/')[-1].split('.')[0]
+erl_call = `find #{ENV['ERLANG_LIB']} -name erl_call`.split("\n")[0]
+erl_path = ENV['ERL_PATH']
+
+lines = STDIN.readlines
+
+if line_number == lines.length
+  data = lines[[0,line_number-10].max..[0,line_number-1].max].join("\n") + "\n"
+else
+  data = lines[[0,line_number-10].max..[0,line_number-1].max].join("\n") + "\n" + lines[[0,line_number].max][0..line_index-1]
+end
+
+data = data.gsub('\\', '\\\\\\\\').gsub('"', '\"')
+
+if `#{erl_call} -n tm_complete -a 'erlang module_info' 2&gt;&amp;1` =~ /^erl_call: failed to connect to node.*$/  
+  TextMate.call_with_progress(:title =&gt; "Code Completion", :message =&gt; "Preparing Code Completion…") do
+    `export PATH=$PATH:"#{erl_path}"; cd "#{support}/completion"; make --silent &gt;/dev/null 2&gt;&amp;1`
+    `export PATH=$PATH:"#{erl_path}"; "#{erl_call}" -s -n tm_complete -a 'code add_path ["#{support}/completion/ebin"]' 2&gt;&amp;1`
+  end
+end
+
+pipe = IO.popen("\"#{erl_call}\" -n tm_complete -e", 'w+')
+pipe.write "tm_complete:complete(#{module_name},\n\"#{data}\").\n"
+pipe.close_write
+response = pipe.read
+
+if match = /\{ok, "(.*)"\}/.match(response)
+  TextMate.exit_insert_snippet match[1]
+else
+  TextMate.exit_show_tool_tip 'No Completions'
+end
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>~</string>
+	<key>name</key>
+	<string>Completion</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.erlang</string>
+	<key>uuid</key>
+	<string>ACBAA6F3-3B0D-4005-9390-1DFD33BE94C8</string>
+</dict>
+</plist>

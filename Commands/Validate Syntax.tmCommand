@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+require "#{ENV['TM_SUPPORT_PATH']}/lib/textmate.rb"
+require "#{ENV['TM_SUPPORT_PATH']}/lib/ui.rb"
+
+erl_path = ENV['ERL_PATH']
+
+result = `export PATH=$PATH:"#{erl_path}"; "$TM_BUNDLE_SUPPORT/bin/eflymake" "$TM_FILEPATH" 2&gt;&amp;1`
+
+errors_and_warns = []
+
+result.lines do |lines|
+  /:(\d+):(.*)/ =~ lines
+  errors_and_warns.push({:line_no =&gt; $1, :msg =&gt; $2})
+end
+  
+if errors_and_warns.empty?
+  print "Erlang Validation Successful"
+else
+  errors_and_warns_menu = []
+  errors_and_warns.each { |e| errors_and_warns_menu.push("#{e[:msg]} (#{e[:line_no]})")  }
+  t = TextMate::UI.menu(errors_and_warns_menu)
+  TextMate.go_to :line =&gt; errors_and_warns[t][:line_no] if t
+end
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^V</string>
+	<key>name</key>
+	<string>Validate Syntax</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.erlang</string>
+	<key>uuid</key>
+	<string>D4C17092-EF10-40BE-9A59-2FCC47A80706</string>
+</dict>
+</plist>
