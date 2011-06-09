@@ -9,6 +9,10 @@
 		<string>erl</string>
 		<string>hrl</string>
 	</array>
+	<key>foldingStartMarker</key>
+	<string>^[.a-zA-Z0-9_]+\s?\(.*\)\s*-&gt;.*$</string>
+	<key>foldingStopMarker</key>
+	<string>^.*\.$|^%.*$|^\s*$</string>
 	<key>keyEquivalent</key>
 	<string>^~E</string>
 	<key>name</key>
