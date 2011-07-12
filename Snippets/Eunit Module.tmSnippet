@@ -9,14 +9,14 @@
 %% @copyright ${TM_YEAR} ${TM_AUTHOR}
 %% @doc       EUnit test suite module ${1:name}.
 %% @end
--module(${1:${TM_FILEPATH/^.*\/(.*)\.erl$/$1/g}}).
--author('${TM_AUTHOR} &lt;${TM_AUTHOR_EMAIL}&gt;').
+-module (${1:${TM_FILEPATH/^.*\/(.*)\.erl$/$1/g}}).
+-author ('${TM_AUTHOR} &lt;${TM_AUTHOR_EMAIL}&gt;').
 
--define(NOTEST, true).
--define(NOASSERT, true).
--include_lib("eunit/include/eunit.hrl").
+-define (NOTEST, true).
+-define (NOASSERT, true).
+-include_lib ("eunit/include/eunit.hrl").
 
--define(MODNAME, ${1:name}).
+-define (MODNAME, ${1:name}).
 %%%.
 %%%' TEST GENERATOR
 -spec ${1:name}_test_() -&gt; [term()].

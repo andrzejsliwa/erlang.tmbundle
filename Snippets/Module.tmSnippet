@@ -9,8 +9,8 @@
 %% @copyright ${TM_YEAR} ${TM_AUTHOR}
 %% @doc       ${1:description} ${2:${TM_FILEPATH/^.*\/(.*)\.erl$/$1/g}}.
 %% @end
--module(${2:${TM_FILEPATH/^.*\/(.*)\.erl$/$1/g}}).
--export([]).
+-module (${2:${TM_FILEPATH/^.*\/(.*)\.erl$/$1/g}}).
+-export ([]).
 
 %%%.
 %%%'   PUBLIC API
