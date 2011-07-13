@@ -7,14 +7,14 @@
 %%
 %% @author    ${TM_AUTHOR} &lt;${TM_AUTHOR_EMAIL}&gt;
 %% @copyright ${TM_YEAR} ${TM_AUTHOR}
-%% @doc       ${1:description} ${2:${TM_FILEPATH/^.*\/(.*)\.erl$/$1/g}}.
+%% @doc       ${1:description} ${TM_FILEPATH/^.*\/(.*)\.erl$/$1/g}.
 %% @end
--module(${2:${TM_FILEPATH/^.*\/(.*)\.erl$/$1/g}}).
+-module(${TM_FILEPATH/^.*\/(.*)\.erl$/$1/g}).
 -export([]).
 
 %%%.
 %%%'   PUBLIC API
-${3:...}
+${2:...}
 
 %%%.
 %%%'   PRIVATE FUNCTIONS

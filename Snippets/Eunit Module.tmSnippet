@@ -7,20 +7,20 @@
 %%
 %% @author    ${TM_AUTHOR} &lt;${TM_AUTHOR_EMAIL}&gt;
 %% @copyright ${TM_YEAR} ${TM_AUTHOR}
-%% @doc       EUnit test suite module ${1:name}.
+%% @doc       EUnit test suite module ${TM_FILEPATH/^.*\/(.*)\_test.erl$/$1/g}.
 %% @end
--module(${1:${TM_FILEPATH/^.*\/(.*)\.erl$/$1/g}}).
+-module(${TM_FILEPATH/^.*\/(.*)\.erl$/$1/g}).
 -author('${TM_AUTHOR} &lt;${TM_AUTHOR_EMAIL}&gt;').
 
 -define(NOTEST, true).
 -define(NOASSERT, true).
 -include_lib("eunit/include/eunit.hrl").
 
--define(MODNAME, ${1:name}).
+-define(MODNAME, ${1:${TM_FILEPATH/^.*\/(.*)\_test.erl$/$1/g}}).
 %%%.
 %%%' TEST GENERATOR
--spec ${1:name}_test_() -&gt; [term()].
-${1:name}_test_() -&gt;
+-spec ${TM_FILEPATH/^.*\/(.*)\_test.erl$/$1/g}_test_() -&gt; [term()].
+${TM_FILEPATH/^.*\/(.*)\_test.erl$/$1/g}_test_() -&gt;
     %% add your asserts in the returned list, e.g.:
     %% [
     %%   ?assert(?MODNAME:double(2) =:= 4),
