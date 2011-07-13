@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>-module (${1:${TM_FILEPATH/^.*\/(.*)\.erl$/$1/g}}).</string>
+	<string>-module(${1:${TM_FILEPATH/^.*\/(.*)\.erl$/$1/g}}).</string>
 	<key>name</key>
 	<string>Module Directive</string>
 	<key>scope</key>

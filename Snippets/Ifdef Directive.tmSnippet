@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>-ifdef (${1:macro}).</string>
+	<string>-ifdef(${1:macro}).</string>
 	<key>name</key>
 	<string>Ifdef Directive</string>
 	<key>scope</key>

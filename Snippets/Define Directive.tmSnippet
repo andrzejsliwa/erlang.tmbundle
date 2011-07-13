@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>-define (${1:macro}${2: (${3:param})}, ${4:body}).</string>
+	<string>-define(${1:macro}${2: (${3:param})}, ${4:body}).</string>
 	<key>name</key>
 	<string>Define Directive</string>
 	<key>scope</key>

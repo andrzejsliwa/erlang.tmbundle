@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>-behaviour (${1:behaviour}).</string>
+	<string>-behaviour(${1:behaviour}).</string>
 	<key>name</key>
 	<string>Behaviour Directive</string>
 	<key>scope</key>

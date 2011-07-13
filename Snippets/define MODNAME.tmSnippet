@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>-define (MODNAME, ${1:module}).
+	<string>-define(MODNAME, ${1:module}).
 </string>
 	<key>name</key>
 	<string>Define MODNAME</string>

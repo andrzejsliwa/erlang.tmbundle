@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>-import (${1:module}, [${2:function}/${3:arity}]).</string>
+	<string>-import(${1:module}, [${2:function}/${3:arity}]).</string>
 	<key>name</key>
 	<string>Import Directive</string>
 	<key>scope</key>

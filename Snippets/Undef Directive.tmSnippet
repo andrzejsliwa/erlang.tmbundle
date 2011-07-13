@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>-undef (${1:macro}).</string>
+	<string>-undef(${1:macro}).</string>
 	<key>name</key>
 	<string>Undef Directive</string>
 	<key>scope</key>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>-export ([${1:function}/${2:arity}]).</string>
+	<string>-export([${1:function}/${2:arity}]).</string>
 	<key>name</key>
 	<string>Export Directive</string>
 	<key>scope</key>

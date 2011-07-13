@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>-record (${1:record}, {
+	<string>-record(${1:record}, {
 	${2:field}${3: = ${4:value}}
 }).</string>
 	<key>name</key>
