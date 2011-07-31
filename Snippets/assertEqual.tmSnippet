@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>?assertEqual(${1:"ba"}, ?MODNAME:${2:reverse}(${3:"ab"})),
+	<string>?${1:_}assertEqual(${2:"ba"}, ?MODNAME:${3:reverse}(${4:"ab"})),
 </string>
 	<key>name</key>
 	<string>assertEqual</string>

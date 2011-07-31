@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>?assertThrow(${1:{not_found, _\}}, ?MODNAME:${2:func}(${3:unknown_object})),
+	<string>?${1:_}assertThrow(${2:{not_found, _\}}, ?MODNAME:${3:func}(${4:unknown_object})),
 </string>
 	<key>name</key>
 	<string>assertThrow</string>

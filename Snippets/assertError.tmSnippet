@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>?assertError(${1:badarith}, ?MODNAME:${2:divide}(${3:X, 0})),
+	<string>?${1:_}assertError(${2:badarith}, ?MODNAME:${3:divide}(${4:X, 0})),
 </string>
 	<key>name</key>
 	<string>assertError</string>

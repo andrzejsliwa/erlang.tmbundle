@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>?${1:_}assert(${2:not, }?MODNAME:${3:double}(${4:2}) ${5:=:=} ${6:4}),
+	<string>?${1:_}assertNot(?MODNAME:${2:double}(${3:2}) ${4:=:=} ${5:5}),
 </string>
 	<key>name</key>
-	<string>assert</string>
+	<string>assertNot</string>
 	<key>scope</key>
 	<string>source.erlang</string>
 	<key>tabTrigger</key>
-	<string>as</string>
+	<string>asn</string>
 	<key>uuid</key>
-	<string>BF8BB3C7-1B66-45E6-B2CA-E90DDA72F02A</string>
+	<string>704A527E-FCD1-43F1-BB1F-176FF4136035</string>
 </dict>
 </plist>

@@ -3,15 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>?${1:_}assert(${2:not, }?MODNAME:${3:double}(${4:2}) ${5:=:=} ${6:4}),
-</string>
+	<string>?${1:_}assertCmd("${2:mkdir foo}"),</string>
 	<key>name</key>
-	<string>assert</string>
+	<string>assertCmd</string>
 	<key>scope</key>
 	<string>source.erlang</string>
 	<key>tabTrigger</key>
-	<string>as</string>
+	<string>asc</string>
 	<key>uuid</key>
-	<string>BF8BB3C7-1B66-45E6-B2CA-E90DDA72F02A</string>
+	<string>484B1830-9252-485B-AB96-3A6E96869E00</string>
 </dict>
 </plist>
