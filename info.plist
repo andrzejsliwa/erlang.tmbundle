@@ -27,6 +27,7 @@
 			<string>BCE795F2-38C1-461A-B7AC-006F8EE8D55F</string>
 			<string>8ABD62EE-587A-408E-85F6-280BB5873361</string>
 			<string>2DD6B8FE-CDA5-456A-A841-E67FB5E06E8D</string>
+			<string>3AE7553C-B0B3-42FF-92FB-CBE04422AF7A</string>
 			<string>011C8500-F066-4026-ADD5-318B02450C2B</string>
 			<string>740F16A3-18AE-4E6D-8267-7A13B7104AA7</string>
 			<string>E51CA437-BD6F-4B4D-9822-3CDC97C50E79</string>
@@ -92,6 +93,19 @@
 				</array>
 				<key>name</key>
 				<string>Eunit Assertions</string>
+			</dict>
+			<key>3AE7553C-B0B3-42FF-92FB-CBE04422AF7A</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>4B6C8F57-7E68-442B-B6E1-CE8C9251C44B</string>
+					<string>6E93B7DB-60DC-420A-B937-8A8E5363FCDB</string>
+					<string>892A2483-9D34-46F6-9ADE-2B2AAA9DCC30</string>
+					<string>FE00FCEE-F1CD-40B7-A43E-F72349E29B34</string>
+					<string>54680EF3-ACC7-4401-845C-22CD53D61179</string>
+				</array>
+				<key>name</key>
+				<string>Eunit Debugging</string>
 			</dict>
 			<key>740F16A3-18AE-4E6D-8267-7A13B7104AA7</key>
 			<dict>
@@ -204,6 +218,11 @@
 		<string>D4C17092-EF10-40BE-9A59-2FCC47A80706</string>
 		<string>88C95C65-6BCA-4A9D-9444-A3B6B37BF068</string>
 		<string>BF8BB3C7-1B66-45E6-B2CA-E90DDA72F02A</string>
+		<string>FE00FCEE-F1CD-40B7-A43E-F72349E29B34</string>
+		<string>892A2483-9D34-46F6-9ADE-2B2AAA9DCC30</string>
+		<string>6E93B7DB-60DC-420A-B937-8A8E5363FCDB</string>
+		<string>4B6C8F57-7E68-442B-B6E1-CE8C9251C44B</string>
+		<string>54680EF3-ACC7-4401-845C-22CD53D61179</string>
 		<string>704A527E-FCD1-43F1-BB1F-176FF4136035</string>
 		<string>B0ABFEE1-DB7E-4FF5-BCCF-B3CAAC000BC5</string>
 		<string>5019A32D-6824-4679-921B-70372D8F6DC2</string>

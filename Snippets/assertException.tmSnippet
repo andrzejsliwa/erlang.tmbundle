@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>?${1:_}assertException(${2:throw}, ${3:{not_found, _\}}, ${4: throw({not_found, 42\})}),</string>
+	<string>?${1:_}assertException(${2:throw}, ${3:{not_found, _\}}, ${4: throw({not_found, 42\})})</string>
 	<key>name</key>
 	<string>assertException</string>
 	<key>scope</key>

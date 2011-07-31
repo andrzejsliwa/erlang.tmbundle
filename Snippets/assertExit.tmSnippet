@@ -3,8 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>?${1:_}assertExit(${2:normal}, ?MODNAME:${3:exit}(${4:normal})),
-</string>
+	<string>?${1:_}assertExit(${2:normal}, ?MODNAME:${3:exit}(${4:normal}))</string>
 	<key>name</key>
 	<string>assertExit</string>
 	<key>scope</key>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>?${1:_}assertCmdStatus(${2:0}, "${3:mkdir foo}"),</string>
+	<string>?${1:_}assertCmdStatus(${2:0}, "${3:mkdir foo}")</string>
 	<key>name</key>
 	<string>assertCmdStatus</string>
 	<key>scope</key>

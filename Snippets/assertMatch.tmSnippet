@@ -3,8 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>?${1:_}assertMatch(${2:{ok, Pid\}}, ?MODNAME:${3:spawn_link}(${4:})),
-</string>
+	<string>?${1:_}assertMatch(${2:{ok, Pid\}}, ?MODNAME:${3:spawn_link}(${4:}))</string>
 	<key>name</key>
 	<string>assertMatch</string>
 	<key>scope</key>

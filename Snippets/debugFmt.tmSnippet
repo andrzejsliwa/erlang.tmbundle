@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>?${1:_}assertEqual(${2:"ba"}, ?MODNAME:${3:reverse}(${4:"ab"}))</string>
+	<string>?debugFmt("${1:~s}", [${2:"Hello"}])</string>
 	<key>name</key>
-	<string>assertEqual</string>
+	<string>debugFmt</string>
 	<key>scope</key>
 	<string>source.erlang</string>
 	<key>tabTrigger</key>
-	<string>ase</string>
+	<string>df</string>
 	<key>uuid</key>
-	<string>B0ABFEE1-DB7E-4FF5-BCCF-B3CAAC000BC5</string>
+	<string>6E93B7DB-60DC-420A-B937-8A8E5363FCDB</string>
 </dict>
 </plist>

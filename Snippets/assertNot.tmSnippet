@@ -3,8 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>?${1:_}assertNot(?MODNAME:${2:double}(${3:2}) ${4:=:=} ${5:5}),
-</string>
+	<string>?${1:_}assertNot(?MODNAME:${2:double}(${3:2}) ${4:=:=} ${5:5})</string>
 	<key>name</key>
 	<string>assertNot</string>
 	<key>scope</key>
