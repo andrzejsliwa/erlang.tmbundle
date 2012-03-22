@@ -11,8 +11,6 @@ dispatch :controller =&gt; "rebar", :action =&gt; "custom"
 </string>
 	<key>input</key>
 	<string>none</string>
-	<key>keyEquivalent</key>
-	<string>^R</string>
 	<key>name</key>
 	<string>Rebar - ...</string>
 	<key>output</key>

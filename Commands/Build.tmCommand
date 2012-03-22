@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>beforeRunningCommand</key>
-	<string>nop</string>
+	<string>saveModifiedFiles</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby
-require ENV['TM_BUNDLE_SUPPORT'] + '/environment.rb'
-dispatch :controller =&gt; "rebar", :action =&gt; "eunit"
-</string>
+	<string>cd $TM_PROJECT_DIRECTORY/
+echo "&lt;pre&gt;"
+make eunit
+echo "&lt;/pre&gt;"</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
@@ -20,6 +20,6 @@ dispatch :controller =&gt; "rebar", :action =&gt; "eunit"
 	<key>scope</key>
 	<string>source.erlang</string>
 	<key>uuid</key>
-	<string>1530F3D5-446F-414D-A384-017DEA630267</string>
+	<string>BC2CD34C-DF68-4C23-8CF5-110E4E24D39F</string>
 </dict>
 </plist>
