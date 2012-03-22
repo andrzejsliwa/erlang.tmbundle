@@ -3,8 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:function} (${2:param})${3: when ${4:guard}} -&gt;
-	${5:body}</string>
+	<string>%% @spec ${1:function}(${2:param}) -&gt; ${3:any()}.
+%% @doc
+${1:function}(${2:param})${4: when ${5:guard}} -&gt;
+	${6:body}</string>
 	<key>keyEquivalent</key>
 	<string>^F</string>
 	<key>name</key>

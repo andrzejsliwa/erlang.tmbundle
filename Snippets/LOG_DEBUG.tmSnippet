@@ -3,14 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>?debugFmt("${1:~p~n}", [${2:Value}])</string>
+	<string>?LOG_DEBUG("${1:~p~n}", [${2:Value}])</string>
 	<key>name</key>
-	<string>debugFmt</string>
-	<key>scope</key>
-	<string>source.erlang</string>
+	<string>LOG_DEBUG</string>
 	<key>tabTrigger</key>
-	<string>df</string>
+	<string>ld</string>
 	<key>uuid</key>
-	<string>6E93B7DB-60DC-420A-B937-8A8E5363FCDB</string>
+	<string>EA33D619-3DC9-404C-A27E-E37050DE7ABE</string>
 </dict>
 </plist>
