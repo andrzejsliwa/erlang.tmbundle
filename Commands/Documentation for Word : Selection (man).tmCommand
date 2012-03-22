@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>export MANPATH=$ERLANG_HOME/man
+	<string>export MANPATH=$ERLANG_HOME/share/man
 word=${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}
 
 try_man () {
